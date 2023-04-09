@@ -1,22 +1,119 @@
-
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  height: 100vh;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  background-color: rgb(16, 16, 16);
+  flex-direction: column;
 }
 
 #iniciar {
-    background: rgba(0, 0, 0, 0.455);
-    border: none;
-    border-radius: 0.7em;
-    padding: 3em 8em;
-    color: white;
-    margin-right: 1.25em;
-    margin-top: 1.25em;
-    cursor: pointer;
-    transition: .3s ease all;
-    font-size: 1.12em;
-    
+  background: rgba(0, 0, 0, 0.455);
+  border: none;
+  border-radius: 0.7em;
+  padding: 3em 8em;
+  color: white;
+  margin-right: 1.25em;
+  margin-top: 1.25em;
+  cursor: pointer;
+  transition: .3s ease all;
+  font-size: 1.12em;
+  font-style: white;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(52, 51, 51);
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.imagen {
+  border-radius: 50%;
+  height: 8vh;
+  size-adjust: contain;
+}
+
+#button {
+  background: rgba(0, 0, 0, 0.455);
+  border: none;
+  border-radius: 0.7em;
+  padding: 1.5em 2em;
+  color: white;
+  margin-right: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: .3s ease all;
+  font-size: 1em;
+  font-style: white;
+  width: 60vw;
+  height: 4vh;
+}
+
+button {
+  width: 5vw;
+  height: 4vh;
+}
+
+/*Modal*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(39, 39, 39);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #393939;
+  width: 80%;
+  max-width: 600px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#head {
+  display: flex;
+  flex-direction: row;
+}
+
+#mateo {
+  display: flex;
+  flex-direction: row;
+}
+
+#contenido {
+  display: flex;
+  flex-direction: column;
 }
