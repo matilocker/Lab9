@@ -5,20 +5,7 @@ body {
   align-items: center;
   background-color: rgb(16, 16, 16);
   flex-direction: column;
-}
-
-#iniciar {
-  background: rgba(0, 0, 0, 0.455);
-  border: none;
-  border-radius: 0.7em;
-  padding: 3em 8em;
-  color: white;
-  margin-right: 1.25em;
-  margin-top: 1.25em;
-  cursor: pointer;
-  transition: .3s ease all;
-  font-size: 1.12em;
-  font-style: white;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -41,9 +28,11 @@ p {
   border-radius: 50%;
   height: 8vh;
   size-adjust: contain;
+  order: -1;
 }
 
-#button {
+#button,
+#input {
   background: rgba(0, 0, 0, 0.455);
   border: none;
   border-radius: 0.7em;
@@ -54,14 +43,41 @@ p {
   cursor: pointer;
   transition: .3s ease all;
   font-size: 1em;
-  font-style: white;
-  width: 60vw;
-  height: 4vh;
+  font-style: rgb(120, 120, 120);
+  text-align: left;
 }
 
-button {
-  width: 5vw;
-  height: 4vh;
+#button {
+  width: 60vw;
+  height: 8vh;
+}
+
+#input {
+  width: 25vw;
+  height: 13vh;
+  padding: 10px;
+  margin: 20px;
+  text-align: start;
+}
+
+#boton {
+  background: rgba(0, 0, 0, 0.455);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  margin-right: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: .3s ease all;
+  font-size: 1em;
+  font-style: rgb(120, 120, 120);
+  text-align: left;
+  margin-top: 30px;
+  width: 40vw;
+  height: 3vh;
+  text-align: center;
 }
 
 /*Modal*/
@@ -87,6 +103,7 @@ button {
   border: 1px solid #393939;
   width: 80%;
   max-width: 600px;
+  border-radius: 20px;
 }
 
 .close {
@@ -106,6 +123,7 @@ button {
 #head {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 #mateo {
@@ -116,4 +134,34 @@ button {
 #contenido {
   display: flex;
   flex-direction: column;
+}
+
+h2, h3 {
+  order: 0;
+  color: aliceblue;
+}
+
+span {
+  order: 1;
+}
+
+.chat {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(52, 51, 51);
+  padding: 20px;
+  border-radius: 30px;
+  width: 67vw;
+  height: auto;
+  margin: 20px;
+}
+
+.parrafo {
+  word-wrap: break-word;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin-left: 50px;
 }
